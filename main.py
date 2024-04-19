@@ -7,13 +7,13 @@ import json
 # the file name should be ''scrape-source.xlsx''
 df = pd.read_excel('scrape-source.xlsx', header=None)
 
-# Function to scrape data from a URL
+# Function to scrape data from a URL in the spreadsheet 
 def scrape_data(url):
     try:
         response = requests.get(url)
         soup = BeautifulSoup(response.text, 'html.parser')
 
-        # Extract relevant information 
+        # Extract relevant MB 
         # For demonstration, just extracting all links
         links = [link.get('href') for link in soup.find_all('a')]
 
