@@ -15,7 +15,7 @@ You can install the required Python libraries using `pip`:
 
 ```bash
 pip install pandas requests beautifulsoup4
-
+```
 ## Project Structure
 
 - `scrape-source.xlsx`: Excel file containing the list of URLs to scrape.
